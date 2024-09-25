@@ -10,9 +10,9 @@ const Layout = (props) => {
 
         {/* Link */}
         <ul className='flex justify-center lg:text-2xl text-lg'>
-          <Navlink href={'/'}>about</Navlink>
-          <Navlink href={'/skills'}>my skills</Navlink>
+          <Navlink href={'/'}>about me</Navlink>
           <Navlink href={'/projects'}>my projects</Navlink>
+          <Navlink href={'/skills'}>my skills</Navlink>
           <Navlink href={'/contact'}>contact me</Navlink>
         </ul>
 
