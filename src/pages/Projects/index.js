@@ -8,7 +8,10 @@ const Work = () => {
       {listOfWorks.map((work, i) => {
         const { duration, job, website, company, jobdesks, stacks } = work;
         return (
-          <div className='hover:bg-white hover:text-black py-5 rounded-md flex'>
+          <div
+            key={i}
+            className='hover:bg-white hover:text-black py-5 rounded-md flex'
+          >
             <div className='w-1/5 text-xl px-5'>{duration}</div>
             <div className='w-4/5 text-justify px-5'>
               <p className='text-xl'>
