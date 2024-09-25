@@ -104,3 +104,24 @@ export const listOfWorks = [
     ],
   },
 ];
+
+export const skills = [
+  {
+    title: 'react js',
+    logo: 'teenyicons:react-outline',
+  },
+  { title: 'laravel', logo: 'file-icons:laravel' },
+  { title: 'lumen', logo: 'simple-icons:lumen' },
+  { title: 'tailwind CSS', logo: 'simple-icons:tailwindcss' },
+  { title: 'redux', logo: 'akar-icons:redux-fill' },
+  { title: 'node js', logo: 'fa-brands:node' },
+  { title: 'git', logo: 'pajamas:git' },
+];
+
+export const language = [
+  {
+    title: 'javascript',
+    logo: 'akar-icons:javascript-fill',
+  },
+  { title: 'PHP', logo: 'akar-icons:php-fill' },
+];
