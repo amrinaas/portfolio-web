@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Title } from '../../components';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "about me - Amrina's Web Portfolio";
+  }, []);
+
   return (
     <div>
       <Layout>

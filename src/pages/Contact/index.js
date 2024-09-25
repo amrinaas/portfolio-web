@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Title } from '../../components';
 import { Link } from 'react-router-dom';
 
@@ -19,6 +19,10 @@ const ButtonMailTo = ({ mailto, label }) => {
 };
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "contact me - Amrina's Web Portfolio";
+  }, []);
+
   return (
     <Layout>
       <Title title={'Contact'} />

@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Title, BoxLayout } from '../../components';
 import { language, skills } from '../../utils/data';
 
 const Skills = () => {
+  useEffect(() => {
+    document.title = "skills - Amrina's Web Portfolio";
+  }, []);
+
   return (
     <Layout>
       <Title title={'Skills'} />

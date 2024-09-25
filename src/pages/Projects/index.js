@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout, Title, Badge } from '../../components';
 import { listOfProjects, listOfWorks } from '../../utils/data';
 
@@ -103,6 +103,10 @@ const Project = () => {
 };
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "projects - Amrina's Web Portfolio";
+  }, []);
+
   return (
     <Layout>
       <Title title={'Experiences & Projects'} />
