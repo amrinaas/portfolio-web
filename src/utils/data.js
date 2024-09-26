@@ -2,6 +2,7 @@ import infinite from '../assets/images/infinite_invites.png';
 import keai from '../assets/images/keai.png';
 import pokeball from '../assets/images/pokeball.png';
 import authApp from '../assets/images/auth-app.jpeg';
+import foodApp from '../assets/images/foodApp.jpeg';
 
 export const listOfProjects = [
   {
@@ -49,16 +50,16 @@ export const listOfProjects = [
     description: 'Catch your pokemon!',
     livePreview: true,
   },
-  //   {
-  //     id: 5,
-  //     image: pokeball,
-  //     link: '#',
-  //     title: 'FoodAddict',
-  //     badge: ['Next Js'],
-  //     description:
-  //       'This application is a food app where user can share, find and join community for food/meals.',
-  //     livePreview: false,
-  //   },
+  {
+    id: 5,
+    image: foodApp,
+    link: 'https://foodieaddict.netlify.app/',
+    title: 'FoodAddict',
+    badge: ['Next Js'],
+    description:
+      'This application is a food app where user can share, find and join community for food/meals.',
+    livePreview: true,
+  },
 ];
 
 export const listOfWorks = [
@@ -116,6 +117,7 @@ export const skills = [
   { title: 'redux', logo: 'akar-icons:redux-fill' },
   { title: 'node js', logo: 'fa-brands:node' },
   { title: 'git', logo: 'pajamas:git' },
+  { title: 'next js', logo: 'ri:nextjs-line' },
 ];
 
 export const language = [

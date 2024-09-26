@@ -9,7 +9,9 @@ const Home = () => {
         <h5 className='lg:text-2xl text-lg'>
           Hi, nice to meet you!:) My name is
         </h5>
-        <h1 className='lg:text-5xl text-3xl'>Amrina Aulia Siregar</h1>
+        <h1 className='lg:text-5xl text-3xl animate-bounce'>
+          Amrina Aulia Siregar
+        </h1>
         <p className='lg:text-2xl text-lg'>
           I am a dedicated web developer with a passion for creating innovatiove
           and user-friendly websites that leave a lasting impression.

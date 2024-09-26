@@ -11,7 +11,7 @@ const ButtonMailTo = ({ mailto, label }) => {
         e.preventDefault();
       }}
     >
-      <h3 className='px-4 py-1 border-2 border-white border-solid text-2xl hover:bg-white hover:text-black'>
+      <h3 className='px-4 py-1 border-2 border-white border-solid text-2xl bg-white text-black hover:bg-black hover:text-white'>
         {label}
       </h3>
     </Link>
