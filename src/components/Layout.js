@@ -4,12 +4,11 @@ import { Navlink } from '../components';
 
 const Layout = (props) => {
   return (
-    <div className='font-vt bg-black/90 min-h-screen text-white  lg:px-24 md:px-12 px-7'>
-      <nav className='flex flex-row justify-between py-5'>
+    <div className='lg:px-24 md:px-12 px-7'>
+      <nav className='flex lg:flex-row md:flex-row flex-col justify-between py-5'>
         <ul></ul>
-
         {/* Link */}
-        <ul className='flex justify-center lg:text-2xl text-lg'>
+        <ul className='flex lg:justify-center'>
           <Navlink href={'/'}>about me</Navlink>
           <Navlink href={'/projects'}>my projects</Navlink>
           <Navlink href={'/skills'}>my skills</Navlink>
@@ -17,7 +16,7 @@ const Layout = (props) => {
         </ul>
 
         {/* Icon */}
-        <ul className='lg:text-3xl text-lg flex flex-row items-center'>
+        <ul className='lg:text-3xl text-sm flex flex-row items-center lg:mt-0 md:mt-0 mt-3'>
           <HeaderIcon
             link={'https://www.linkedin.com/in/amrinaas/'}
             icon={'bi:linkedin'}

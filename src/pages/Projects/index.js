@@ -10,10 +10,12 @@ const Work = () => {
         return (
           <div
             key={i}
-            className='hover:bg-white hover:text-black py-5 rounded-md flex'
+            className='hover:bg-white hover:text-black lg:py-5 py-3 rounded-md flex'
           >
-            <div className='w-1/5 text-xl px-5'>{duration}</div>
-            <div className='w-4/5 text-justify px-5'>
+            <div className='lg:w-1/5 w-1/4 text-xl lg:px-5 px-0'>
+              {duration}
+            </div>
+            <div className='lg:w-4/5 w-3/4 text-justify lg:px-5 px-0 lg:pl-0 pl-5'>
               <p className='text-xl'>
                 {job}
                 {company ? (
@@ -40,7 +42,7 @@ const Work = () => {
                   <li key={i}>{jobdesk}</li>
                 ))}
               </ul>
-              <div className='mt-3'>
+              <div className='mt-3 flex flex-wrap'>
                 {stacks.map((stack, i) => (
                   <Badge key={i} text={stack} />
                 ))}
@@ -55,20 +57,20 @@ const Work = () => {
 
 const Project = () => {
   return (
-    <div className='grid grid-cols-2 gap-2'>
+    <div className='lg:grid lg:grid-cols-2 lg:gap-2 flex flex-col'>
       {listOfProjects.map((project, i) => (
         <div
           key={i}
-          className='hover:bg-white hover:text-black  p-5 rounded-md flex'
+          className='hover:bg-white hover:text-black lg:py-5 py-3 rounded-md flex'
         >
           <div className='w-2/5'>
             <img
               src={project.image}
               alt='project'
-              className='border-2 me-5 rounded-md border-slate-200/20 bg-cover'
+              className='border-2 me-5 rounded-md border-slate-200/20 bg-cover lg:w-full w-11/12'
             />
           </div>
-          <div className='w-3/5 text-justify px-5'>
+          <div className='w-3/5 text-justify lg:px-5 md:px-2 px-1'>
             <p className='text-xl'>
               <span className='text-cyan-600'>
                 <a
