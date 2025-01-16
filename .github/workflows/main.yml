@@ -57,9 +57,9 @@ jobs:
       run: npm run build  
   
     - name: Deploy to FTP  
-      uses: SamKirkland/FTP-Deploy-Action@4.3.4  
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:  
-        server: ftp.appimate.com
+        server: ftp.samkirkland.com
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         local-dir: build/
